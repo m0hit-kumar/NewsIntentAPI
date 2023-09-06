@@ -54,3 +54,5 @@ Before you begin, ensure you have the following prerequisites installed:
    ```
 
    The app should be running locally at [http://localhost:5000](http://localhost:5000).
+
+2. To test the enpoint copy the demo_data.json data into body of post request.
