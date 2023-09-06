@@ -54,6 +54,3 @@ Before you begin, ensure you have the following prerequisites installed:
    ```
 
    The app should be running locally at [http://localhost:5000](http://localhost:5000).
-```
-
-Customize the content as needed for your specific Flask app, and save it as `README.md` in your project's root directory. Be sure to replace `[License Name]` with the actual license name, and consider including a `LICENSE.md` file with license details.
