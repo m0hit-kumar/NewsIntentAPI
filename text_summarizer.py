@@ -16,21 +16,12 @@ test_data = """
 
 
 def summary(text):
-    print("data_sum")
     parser = PlaintextParser.from_string(text, Tokenizer("english"))
     summary = summarizer(parser.document, 2)
     text_summary = ""
     for sentence in summary:
         text_summary += str(sentence)
     return text_summary
-
-
-def data_processing(data):
-    for news in data:
-        print("data_pre")
-        intent = predict_intent(summary(news["text"]))
-        news["intent"] = intent
-    return data
 
 # uncomment and run file to test
 # print(summary(test_data))

@@ -19,9 +19,7 @@ test_text = "The United States of America, commonly known as the United States (
 
 
 def predict_intent(text):
-    print("predict_int")
     text = vectorizer.transform([text])
-    # return model.predict(text)
     return label_mapping.get(model.predict(text).item(), 'Unknown')
 
 
