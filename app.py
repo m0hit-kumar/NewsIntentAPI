@@ -19,12 +19,17 @@ def data_processing(data):
     return data
 
 
-@app.route("/", methods=['POST'])
+@app.route("/newsintent", methods=['POST'])
 def intenter():
     data = request.json
     news = data_processing(data["news"])
     data["news"] = news
     return jsonify(data)
+
+
+@app.route("/")
+def index():
+    return "application is running"
 
 
 if __name__ == '__main__':
